@@ -5,8 +5,8 @@ TARGET  := test
 SOURCE  := $(wildcard *.c) $(wildcard *.cpp)
 OBJS    := $(patsubst %.c,%.o,$(patsubst %.cpp,%.o,$(SOURCE)))
 
-LIBS    := -L. -lusb-1.0
-LDFLAGS :=
+LIBS    := -lusb-1.0 pthread
+LDFLAGS := -L ./
 INCLUDE := -I.
 CFLAGS  :=  $(INCLUDE) -fPIC #-O3 -std=c++11 -g -Wall
 
