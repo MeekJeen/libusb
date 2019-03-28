@@ -1,6 +1,6 @@
 TOOL_PATH=~/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu/bin
 
-CC      := $(TOOL_PATH)g++
+CC      := $(TOOL_PATH)/aarch64-linux-gnu-g++
 TARGET  := test
 SOURCE  := $(wildcard *.c) $(wildcard *.cpp)
 OBJS    := $(patsubst %.c,%.o,$(patsubst %.cpp,%.o,$(SOURCE)))
