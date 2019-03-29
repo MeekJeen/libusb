@@ -32,7 +32,7 @@ https://mirrors.edge.kernel.org/pub/linux/utils/usb/usbutils/
 
 //查看usb端点信息:VID:2207 PID:0006
 # lsusb -v -d 4537:0031
-# lsusb -v -d 4537:0006 | grep bEndpointAddress
+# lsusb -v -d 4537:0031 | grep bEndpointAddress
 # g++ libusb.cpp -lusb-1.0
 
 四、格式化分区，挂载ext4文件系统到/data/test目录
