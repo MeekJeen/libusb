@@ -44,3 +44,7 @@ mount   -t  type   device   dir
 //sync同步挂载文件系统
 # mount -t ext4 -o sync,rw /dev/block/sd5 /sdcard/test
 
+//从缓冲区写入磁盘
+# sync
+# echo 3 > /proc/sys/vm/drop_caches
+
