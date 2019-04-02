@@ -11,6 +11,13 @@ export PATH=$PATH:~/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu/bin
 # source /etc/profile
 
 3.配置编译
+aarch64 //arm 64位
+--build=x86_64指明软件的编译平台
+--host=aarch64-linux-gnu 指明软件的运行平台
+--prefix 指明软件的安装目录
+CC=arm-linux-gcc 若为交叉编译那么需要指定该工具链
+CXX=arm-linux-g++) 若为交叉编译那么需要指定该工具链
+
 # ./configure --build=x86_64 --host=aarch64-linux-gnu --prefix=~/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-gnu/bin CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ --disable-udev
 # make
 
